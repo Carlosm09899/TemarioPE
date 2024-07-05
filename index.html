@@ -1,210 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Verano Probabilidad</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Verano PE 2024</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1 style="text-align: center;">Temario Probabilidad y Estadística.</h1>
-  </header>
-  <main>
-    <h1 style="text-align: center;">Estadística descriptiva.</h1>
-    <div class="Subtema1">
-    <h2>1.1 Conceptos básicos de estadística</h2>
-  <h3>Estadística</h3>
-  <p>Es una ciencia que recolecta, organiza, analisa y interpreta los datos que recolecta, esto se hace para poder llegar a una conclusión que pueda ser valida y obviamente confiable.</p>
-  <h3>Teoria de la decisión</h3>
-  <p>Esta es una rama de la estadística, lo que hace es analizar los datos y la explicación de modelos de estadística para asi poder analizar diferentes alternativas y elegir la opción que nos de un resultado que nos favorezca.</p>   
-  <h3>Población</h3>
-  <p>Se refiere a un cierto conjunto completo de elementos o individuos, estos son sobre los cuales se requieren obtener las conclusiones.</p>
-  <h3>Muestra aleatoria</h3>
-  <p>A esta se le llama subconjunto de la población y como su nombre lo dice se seleccionada de manera aleatoria, entonces todos los datos de nuestra población tienen el mismo porcentaje de probabilidad de que sean elegidos.</p>
-  <h3>Parámetros Aleatorios</h3>
-  <p>Son valores no conocidos los cuales caracterizan a una destribución de probabilidad.</p>
+    <header>
+        <h1>Probabilidad y Estadística</h1>
+    </header>
+
+    <div class="carousel">
+        <img src="https://img-c.udemycdn.com/course/750x422/5122480_74db.jpg" alt="Imagen 1" class="visible">
+        <img src="https://img-c.udemycdn.com/course/750x422/1438150_4ad3_4.jpg" alt="Imagen 2">
+        <img src="https://img-c.udemycdn.com/course/750x422/4194776_9bef.jpg" alt="Imagen 3">
+        <div class="carousel-buttons">
+            <button onclick="prevImage()">&#10094;</button>
+            <button onclick="nextImage()">&#10095;</button>
+        </div>
     </div>
 
-    <div class="Subtema2">
-        <h2>1.2 Descripcion de datos</h2>
-        <h3>Datos agrupados y no agrupados</h3>
-        <p>Los datos agrupados son los que se representan en intervalos o clases, esto facilita el analisis y la presentación. Se utiliza cuando se trabaja con grandes cantidades de datos.</p>
-        <p>Los datos no agrupados son los que se presentan de forma individual, es decir sin agrupar en intervalos. Con estos podemos obtener resultados más detallados.</p>
-        <h3>Frecuencia de clase</h3>
-        <p>Esta nos indica la cantidad de veces que se llega a repetir un valor o un intervalo de valores dentro de nuestro conjunto de datos agrupados.</p>
-        <h3>Frecuencia relativa</h3>
-        <p>Es el porcentaje de una clase o intervalo especifico.</p>
-        <h3>Punto medio</h3>
-        <p>Como su nombre lo dice es el valor central o medio de un intervalo o clase.</p>
-        <h3>Límites</h3>
-        <p>Son valores que definen el rango de nuestra clase o intervalo. Existen dos límites, inferior, es el valor minimo de nuestra clase o intervalo y superior, el cual es el valor maximo de la clase o intervalo.</p>
-          </div>
-      
-          <div class="Subtema3">
-              <h2>1.3 Medidas de tendencia central</h2>
-              <h3>Media aritmética</h3>
-              <p>Es el promedio de los datos.</p>
-              <h3>Media geometrica</h3>
-              <p>Se utiliza para poder calcular el promedio de los datos.</p>
-              <h3>Media ponderada</h3>
-              <p>Se utiliza para calcular el promedio de los datos, teniendo en cuenta la importancia de cada valor mediante factores de ponderación.</p>
-              <h3>Mediana</h3>
-              <p>Valor que divide a los datos que se ordenan en dos mitades.</p>
-              <h3>Moda</h3>
-              <p>Es el valor que se repite más veces en nuestro conjunto de datos</p>
-              <h3>Medidas de dispersión</h3>
-              <p>Nos ayudan a ver que tan extendidos están nuestros datos de la medida de tendencia central.</p>
-              <p>Varianza: Muestra en que medida los datos estan en torno a la media.</p>
-              <p>Desviación estándar: Se utiliza para calcular la dispersión en la que los puntos de los datos inidividuales difieren de la media.</p>
-              <p>Desviación media: Nos ayuda a entender que tanto se alejan los datos del promedio de un conjunto.</p>
-              <p>Desviación mediana: Promedio de las desviaciones absolutas.</p>
-              <h3>Rango</h3>
-              <p>Es la diferencia que existe entre el valor máximo y el minimo de los datos.</p>
-          </div>
-      
-          <div class="Subtema4">
-              <h2>1.4 Parámetros para datos agrupados</h2>
-              <p>Cuando estamos trabajando con este tipo de datos es importante recordar que existen parametros importantes los cuales son: Frecuencia Absoluta, Frecuencia Relativa, Frecuencia Acumulada, Punto Medio, Media, Varianza, Desviación Estándar, Moda y Mediana.</p>
-          </div>    
-      
-          <div class="Subtema5">
-              <h2>1.5 Distribución de frecuencias</h2>
-              <p>Es una tabla donde se muestra la organización y agrupación de los datos.</p>
-          </div>  
-      
-          <div class="Subtema6">
-              <h2>1.6 Técnicas de agrupacioón de datos</h2>
-              <p>Son métodos que se utilizan para poder organizar los datos en grupos.</p>
-          </div> 
-          
-          <div class="Subtema7">
-              <h2>1.7 Técnicas de muestreo</h2>
-              <p>Proceso de seleccionar una parte que represente una población para poder suponer una conclusión sobre toda la población.</p>
-          </div>  
+    <nav>
+        <a href="Tema1.html">Tema 1</a>
+        <a href="Tema2.html">Tema 2</a>
+        <a href="Tema3.html">Tema 3</a>
+    </nav>
 
-          <div class="Subtema8">
-            <h2>1.8 Histogramas</h2>
-            <p>Es una representación gráfica de la distribución de frecuencias de un conjunto de datos continuos.</p>
-        </div>    
-  </main>
-  <h1 style="text-align: center;">Fundamentos de la teoria de la Probabilidad.</h1>
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.carousel img');
 
-  <div class="Subtema2.1">
-    <h2>2.1 Técnicas de conteo</h2>
-    <p>Son estrategias que nos ayudan a poder encontar el número total de resultados que pueden existir despues de hacer combinaciones dentro de un conjunto o conjunto de datos</p>
-  <h3>2.1.1 Principio aditivo</h3>
-  <p>También es conocido como principio de suma, es una tecnica que se utiliza para poder encontrar el número total de formas en las que se puede realizar una acción que tiene más de una alternnativa</p>
-  <h3>Principio Multiplicativo</h3>
-  <p>Técnica que es utilizada para poder resolver problemas de conteo, ayuda a hallar la solución sin que se enumeren sus elementos. Practicamente se basa en una multiplicación sucesiva para así determinar la manera en la que puede llegar a ocurrir un eveneto</p>
-  <h3>2.1.3 Notación Factorial</h3>
-  <p>Es el producto de todos los números enteros postivos, se expresa como n!</p>
-  <h3>2.1.4 Permutaciones</h3>
-  <p>Es la técnica que nos ayuda a contar el números de formas en las que se ordena un conjunto de elementos, en esta ténica el orden si importa</p>
-  <h3>2.1.5 Combinaciones</h3>
-  <p>Técnica que nos ayuda a determinar el número de agrupaciones que se pueden formar cuando seleccionamos un conjunto de elementos sin importar el orden</p>
-  <h3>2.1.6 Diagrama de Árbol.</h3>
-  <p>Es una representación gráfica en forma de arbol, donde se colocan las posibles resultados de nuestro experimento</p>
-  <h3>2.1.7 Teorema del Binomio.</h3>
-  <p>Esta ténica se utiliza para poder calcular la probabilidad de eventos binomiales, estos son los que solo tienen dos resultados éxito o fracaso</p>
-</div>
-<div class="Subtema2.2">
-  <h2>2.2 Teoría elemental de probabilidad.</h2>
-  <p>Es una rama de las matematicas, la cual se utiliza para calcular la propbabilidad de un evento en un espacio muestral finito</p>
-</div>
-<div class="Subtema2.3">
-  <h2>2.3 Probabilidad de Eventos</h2>
-  <p>Definición de espacio muestral: Conjunto de todos los resultados posibles de un experimento aleatorio 
-     Definición de evento: Es un subconjunto del espacio muestral
-     Simbología: Conjunto de simbolos que se utilizan para poder representar conceptos, variables y operaciones que estan relacionadas con el estudio de eventos
-     Unión: Se refiere a todos los elementos que pertenecen a un conjunto A y B 
-     Intersección: Conjunto que contine los elementos que pertenecen A y B, es decir, son los elementos que se repiten en A y B
-     Diagramas de Venn: Gráfico que esta formado por circulos que estan superpuestos, cada uno representan un conjunto diferente
-    </p>
-</div>
-<div class="Subtema2.4">
-  <h2>2.4 Probabilidad con Técnicas de Conteo</h3>
-  <p>Axiomas: Son los que sirven como base para construir una teoria coherente y consistente en probabilidad
-     Teoremas: Enunciados matematicos que establecen la relación entre probabilidades y eventos aleatorios
-  </p>
-</div>
-<div class="subtema2.5">
-  <h2>2.5 Probabilidad condicional</h2>
-  <p>Posibilidad que llegue a suceder algo, sabiendo que ya ha ocurrio otra cosa especifica</p>
-  <p>Dependiente: Se refiere a la probabilidad de que ocurra un evento, llamado evento A, sabiendo que ya ha ocurrido otro evento, llamado evento B. En pocas palabras, es la probabilidad de A dado que B ha sucedido.</p>
-  <P>Independiente: La probabilidad marginal, o probabilidad independiente, se refiere a la probabilidad de que ocurra un evento específico sin tener en cuenta la ocurrencia de otros eventos. Se denota por P(A), donde A representa el evento de interés</P>
-</div>
-<div class="Subtema2.6">
-  <h2>2.6 Ley multiplicativa.</h2>
-  <p> Es una herramienta fundamental que permite calcular la probabilidad de la ocurrencia conjunta de dos o más eventos. Esta ley se basa en el principio de que la probabilidad de que ocurra un evento adicional, sabiendo que ya ha ocurrido otro evento</p>
-</div>
-<div class="Subtema2.7">
-  <h2>2.7 Eventos independientes: Regla de Bayes</h2>
-  <p>Herramienta fundamental en que permite actualizar la probabilidad de un evento (hipótesis) en función de la nueva información proporcionada por otro evento (evidencia). Esta regla se basa en el concepto de probabilidad condicional y resulta útil en situaciones donde la información inicial sobre la probabilidad de la hipótesis es incompleta.</p>
-</div>
+        function showImage(index) {
+            images[currentIndex].classList.remove('visible');
+            currentIndex = (index + images.length) % images.length;
+            images[currentIndex].classList.add('visible');
+        }
 
-<h1 style="text-align: center;">Variables Aleatorias.</h1>
-<p>Se le llama a la función la cual asigna valores numericos (aleatorios) a cada resultado posible de un experimento aleatorio. Es decir, es la variable que toma diferentes valores con cierta probabilidad</p>
-<div class="Subtema3.1">
-  <h2>3.1 Variables aleatorias discretas</h2>
-  <p>Es discreta cuando puede solo toma ciertos valores enteros en un número finito de valores, representan algo que se puede contar y que no lleva datos decimales.</p>
-  <h3>3.1.1 Distribución de probabilidad en forma general.</h3>
-  <p>Describe la probabilidad de que un evento se rralice en el futuro</p>
-  <h3>3.1.2 Valor esperado</h3>
-  <p>También conocido como media o promedio "a largo plazo", es el valor que se espera obtener si se repite un experimento un gran número de veces.</p>
-  <h3>3.1.3 Varianza, desviación estándar</h3>
-  <p>La varianza es el promedio de las desviaciones al cuadrado de cada dato con respecto a la media y la desviación estándar es la raiz cuadrada de la varianza, esta representa la distancia que existen entre un dato y la media</p>
-  <h3>3.1.4 Función acumulada</h3>
-  <p>Es la probabilidad de que una variable X sea menor o igual que un valor especifico X</p>
-</div>
-<div class="Subtema3.2">
- <h2>3.2 Variables aleatorias continuas</h2>
- <p>Es la que puede tomar infinitos valores dentro de un intervalo (finito o infintio) de números reales, como por ejemplo el tiempo al recorrer una distancia establecida, la estatura y peso de una persona.</p>
-<h3>3.2.1 Distribución de probabilidad en forma general.</h3>
-<p>Esta describe la probabilidad de que un evento se llegue a realizar en un futuro</p>
-<h3>3.2.2 Valor esperado</h3>
-<p>Representa el promedio de todos los posibles valores que puede llegar a tomar la variable, considerando la probabilidad de cada valor, a diferencia del valor esperado en las variables aleatorias discretas, esta se calcula con una integral definida</p>
-<h3>3.2.3 Varianza y desviación estándar</h3>
-<p>La varianza es el valor esperado de la desviación al cuadrado de la media, la desviación estándar no es más que la raiz cuadra de la varianza</p>
-<h3>3.2.4 Función acumulada</h3>
-<p>Es la que describe la propbabilidad de que la variable aleatoria tome un valor menor o igual a un valor en especifico</p>
-<h3>3.2.5 Calculos de probabilidad</h3>
-<p>Conjunto de técnicas que se utilizan para determinar la probabilidad de que puede ocurrir ciertos eventos o resultados de algún experimento.</p>
-</div>
-<h1 style="text-align: center;">Distribuciones de Probabilidad.</h1>
-<p>Estas distribuciones nos ayudan a describir el comportamiento de las la variables aleatorias, asignan una probabilidad a cada uno de sus posibles valores. En pocas palabras, nos indican la probabilidad de que una variable aleatoria llegue a tomar un valor en especifico</p>
-<div class="Subtema4.1">
-  <h2>4.1 Función de probabilidad</h2>
-  <p>Función matematica que nos indica cual es la probabilidad de que la variable aleatoria llega a tomar un valor en especifico</p>
-</div>
-<div class="Subtema4.2">
-  <h2>4.2 Distribución binomial.</h2>
-  <p>Herramienta que nos ayuda a modelar escenarios donde ocurren eventos aleatorios con dos posibles resultados (éxito o fracaso) de manera repetitiva. Nos permite calcular la probabilidad de obtener un número específico de éxitos en una serie de experimentos</p>
-  </div>
-  <div class="Subtema4.3">
-    <h2>4.3 Distribución hipergeométrica.</h2>
-    <p>Herramienta útil para poder modelar escenarios donde se realiza un muestreo sin reemplazo de una población finita con dos categorías, la distribución hipergeométrica considera que los elementos extraídos no se devuelven a la población, lo que afecta las probabilidades en cada nuevo sorteo</p>
-  </div>
-  <div class="Subtema4.4">
-    <h2>4.4 Distribución de Poisson.</h2>
-    <p>Esta herramienta es muy fundamental para poder modelar la frecuencia de eventos aleatorios que ocurren en un intervalo de tiempo o espacio fijo, esta se aplica a situaciones donde los eventos puede llegar a ocurrir en cualquier momento dentro del intervalo y que no están restringidos a un número en específico </p>
-  </div>
-  <div class="Subtema4.5"></div>
-  <h2>4.5 Distribución normal.</h2>
-  <p>Es una distribución de las mas importantes que existen en estadística. Esta se caracteriza por su forma de campana simétrica y su amplia aplicación en diversas situaciones, en esta distribución los valores más probables se encuentran cerca de la media, mientras que los valores extremos son menos probables </p>
-  <div class="Subtema4.6">
-    <h2>4.6 Distribución T-student.</h2>
-    <p>Es fundamental para realizar conclusiones cuando se trabaja con muestras pequeñas, se aplica en situaciones donde la varianza poblacional es desconocida y se debe estimar a partir de los datos muestrales</p>
-  </div>
-  <div class="Subtema4.7">
-    <h2>4.7 Distribución Chi cuadrada.</h2>
-    <p>Esta es utilizada para realizar pruebas de hipótesis que estan relacionadas con datos categóricos, se aplica a frecuencias de eventos en categorías o grupos</p>
-  </div>
-  <div class="Subtema4.8">
-    <h2>4.8 Distribución F.</h2>
-    <p>Tambien se le conoce como distribución de Fisher-Snedecor, esta se aplica al cociente de dos variables muestrales, es muy importante en el análisis de varianza y en la comparación de varianzas</p>
-  </div>
-  <footer>
-    <p>&copy; Carlos Granados Montoya</p>
-  </footer>
+        function prevImage() {
+            showImage(currentIndex - 1);
+        }
+
+        function nextImage() {
+            showImage(currentIndex + 1);
+        }
+
+        // Auto play carousel
+        setInterval(nextImage, 3000);
+    </script>
 </body>
 </html>
