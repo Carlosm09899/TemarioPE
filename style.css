@@ -2,9 +2,7 @@ h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
-h1 {
-  color: rgb(38, 93, 156); 
-}
+
 
 h2 {
     color: rgb(242, 54, 54);
@@ -13,3 +11,15 @@ h2 {
 h3 {
   color: rgb(46, 143, 167);
 }  
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  text-align: center;
+}
