@@ -3,6 +3,7 @@
 <head>
     <title>Tema 4</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <header>
     <h1>Distribuciones de Probabilidad</h1>
@@ -17,11 +18,17 @@
       <h2>4.2 Distribución binomial.</h2>
       <p>Herramienta que nos ayuda a modelar escenarios donde ocurren eventos aleatorios con dos posibles resultados (éxito o fracaso) de manera repetitiva. Nos permite calcular la probabilidad de obtener un número específico de éxitos en una serie de experimentos</p> 
       <h3>La función de probabilidad de la distribución binomial es:</h3>
-      <img src="imagenes/distribucionBinomial.png">
+      <p>\[ 
+        f(k; n, p)=\binom{n}{k} \cdot p^k \cdot (1 - p)^{(n - k)}
+        \]</p>
       <h3>Media</h3>
-      <p>n*p</p>
+      <p>\[ 
+         n\cdot p
+        \]</p>
       <h3>Varianza</h3>
-      <p>np(1 - p)</p>
+      <p>\[ 
+        n\cdot p (1 - p)
+       \]</p>
       <h3>Implementación en python</h3>
       <p>from scipy.stats import binomial</p>
       <p>n = 10</p>
@@ -34,11 +41,17 @@
         <h2>4.3 Distribución hipergeométrica.</h2>
         <p>Herramienta útil para poder modelar escenarios donde se realiza un muestreo sin reemplazo de una población finita con dos categorías, la distribución hipergeométrica considera que los elementos extraídos no se devuelven a la población, lo que afecta las probabilidades en cada nuevo sorteo</p>
         <h3>Función de distribución hipergeométrica </h3>
-        <img src="imagenes/funcionHipergeometrica.png">
+        <p>\[ 
+          f(k; N, n, K) = \binom{K}{k} \frac{N - K}{n - K}
+         \]</p>
         <h3>Media</h3>
-        <p>nk/N</p>
+        <p>\[
+          \binom{nK}{N}
+          ]</p>
         <h3>Varianza</h3>
-        <p>nK(N - K)(N - n)/N^2(N - 1)</p>
+        <p>\[
+          nK \binom{N}{K} \binom{N}{n} \frac{N^2}{N - 1}
+        \]</p>
         <h3>Implementación en python</h3>
         <p>from scipy.stats import hypergeom</p>
         <p>n = 100</p>
@@ -51,7 +64,9 @@
         <h2>4.4 Distribución de Poisson.</h2>
         <p>Esta herramienta es muy fundamental para poder modelar la frecuencia de eventos aleatorios que ocurren en un intervalo de tiempo o espacio fijo, esta se aplica a situaciones donde los eventos puede llegar a ocurrir en cualquier momento dentro del intervalo y que no están restringidos a un número en específico </p>
         <h3>Formula Poisson</h3>
-        <img src="imagenes/funcionPoisson.png">
+       <p>\[
+          f(k; λ) = \binom{e(^-λ)λ^k}{k!}
+       \]</p>
         <h3>Media</h3>
         <p>λ</p>
         <h3>Varianza</h3>
@@ -66,11 +81,15 @@
       <h2>4.5 Distribución normal.</h2>
       <p>Es una distribución de las mas importantes que existen en estadística. Esta se caracteriza por su forma de campana simétrica y su amplia aplicación en diversas situaciones, en esta distribución los valores más probables se encuentran cerca de la media, mientras que los valores extremos son menos probables </p>
       <h3>Formula distribución normal</h3>
-      <img src="imagenes/fórmula-distribución-normal.jpg">
+     <p>\[
+      f(x; \mu, \sigma^2) = \frac{1}{\sqrt{2 \pi \sigma^2}} \exp \left( -\frac{(x - \mu)^2}{2 \sigma^2} \right)
+     \]</p>
       <h3>Media</h3>
       <p>μ</p>
       <h3>Varianza</h3>
-      <p>σ^2</p>
+      <p>\[
+        σ^2
+      \]</p>
       <h3>Implementación en python</h3>
       <p>from scipy.stats import norm</p>
       <p>mu = 0</p>
