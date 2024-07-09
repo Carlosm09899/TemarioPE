@@ -40,3 +40,8 @@ nav a {
   margin: 0 15px;
   text-align: center;
 }
+
+img {
+  width: 20%;
+  height: auto; /* Maintain aspect ratio */
+}
